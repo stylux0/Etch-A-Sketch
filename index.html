@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Etch-A-Sketch</title>
+</head>
+<body ondragstart="return false;" ondrop="return false;" >
+    <header>
+        <h1>Etch-A-Sketch</h1>
+    </header>
+    <main>
+        
+        <div id="options">
+            <div class="option">
+                <label for="resolution" id="label-resolution">Set resolution</label>
+                <input type="range" name="resolution" id="resolution" min="1" max="100" value="16">
+            </div>
+
+            <div class="option">
+                <label for="color-select">Color Select</label>
+                <input type="color" name="color-select" id="color-select">
+            </div>
+            
+            <div class="option">
+                <button id='clear' class="btn">Clear</button>
+            </div>
+            
+        </div>
+
+        <div id ="main-container">
+            <div id="container">
+
+            </div>
+        </div>
+        
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

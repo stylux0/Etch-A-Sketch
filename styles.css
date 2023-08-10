@@ -1,0 +1,105 @@
+:root{
+    --height-container:512px;
+    --widht-container:512px;
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(Comic\ Story.ttf);
+  }
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: mainFont;
+    box-sizing: content-box;
+    background: rgb(27, 54, 88);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    color: pink;
+    text-shadow: 5px 5px rgb(144, 37, 88);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(43, 12, 52);
+    padding: 50px;
+    background: rgb(64, 48, 106);
+    border-radius: 20px;
+    text-shadow: 1px 1px black;
+    
+}
+
+#options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow: -5px 5px 2px rgb(144, 37, 88);
+    background: rgb(42, 6, 21);
+}
+
+.option{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+label{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.btn{
+    width: 150px;
+    padding: 20px;
+    border: 2px solid rgb(203, 21, 133);
+    background: rgb(253, 253, 253);
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color:  rgb(203, 21, 133);
+}
+
+.btn:hover{
+    background-color:  rgb(203, 21, 133);
+    border: 2px solid white;
+    color: white;
+}
+
+.btn:active{
+    background-color:  rgb(161, 18, 106);
+    border-color: gray;
+}
+
+#container{
+    border: 2px solid black;
+    height: var(--height-container);
+    width: var(--widht-container);
+    display: flex;
+    justify-content:start;
+    align-self: center;
+    background: white;
+    margin-left: 10px;
+    box-shadow: -5px 5px 2px black ;
+
+}
+
+.pixel:hover{
+    background-color: gray;
+    cursor: crosshair;
+}
